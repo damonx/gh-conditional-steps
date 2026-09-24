@@ -13,6 +13,8 @@ jobs:
                 exclude:
                     - node-version: 12
                       os: windows-latest
+                    - node-version: 14
+                      os: macos-latest
         runs-on: ${{ matrix.os }}
         steps:
             - name: Checkout code
